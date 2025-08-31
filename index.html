@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+          body {
+            font-family: 'Montserrat', sans-serif;
+            transition: background-color;
+            margin: 0;
+            background-color: #ffffff;
+            color: #000000;
+          }
+          .image-buttons {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 9999;
+          }
+
+          .image-buttons img {
+            width: 128px;
+            height: 128px;
+            cursor: pointer;
+          }
+        </style>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>luna's silly site :3</title>
+        <meta name="description" content="luna is learning html here!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script>
+            function setBackgroundColor(color) {
+                document.body.style.backgroundColor = color;
+            }
+        </script>
+
+        <script>
+            let isDarkMode = false;
+            function toggleDarkMode() {
+                if (isDarkMode) {
+                    document.body.style.backgroundColor = "#ffffff";
+                    document.body.style.color = "#000000";
+                    isDarkMode = false;
+                } else {
+                    document.body.style.backgroundColor = "#444444";
+                    document.body.style.color = "#ffffff";
+                    isDarkMode = true;
+                }
+            }
+        </script>
+        <div class="image-buttons">
+            <img src="darkmode.png" alt="dark mode :3" onclick="toggleDarkMode()" width="128" height="128">
+        </div>
+        <div style="text-align: center;">
+          <h1>welcome to luna's silly site... she is learning still :3</h1>
+          <p>if you wanna talk to her on discord click below!!!</p>
+          <a href="https://discord.com/users/705298850843328552">
+            <img src="discord.jpg" alt="friend her !" width="200" height="200">
+          </a>
+        </div>
+        
+        <!-- <script src="" async defer></script> -->
+        <!-- <img src="kittycat.jpg" alt="i love cats!"> -->
+    </body>
+</html>
